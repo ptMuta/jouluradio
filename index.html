@@ -17,21 +17,24 @@
     <div class="playback-control">
         <div class="amplitude-play-pause amplitude-playing" amplitude-main-play-pause="true"></div>
     </div>
+    <div class="timer">
+        <span class="amplitude-current-minutes" amplitude-single-current-minutes="true">2</span>:<span class="amplitude-current-seconds" amplitude-single-current-seconds="true">28</span>
+    </div>
     <div class="volume-control">
-        <div class="volume-control-readout">
-            <div class="volume-value"></div>
-            <span class="volume-label"></span>
-        </div>
         <div class="volume-control-buttons">
             <button class="amplitude-volume-up"><i class="fa fa-volume-up"></i></button>
             <button class="amplitude-volume-down"><i class="fa fa-volume-down"></i></button>
         </div>
-    </div>
-    <div class="timer">
-        <span class="amplitude-current-minutes" amplitude-single-current-minutes="true">2</span>:<span class="amplitude-current-seconds" amplitude-single-current-seconds="true">28</span>
+        <div class="volume-control-readout">
+            <div class="volume-value"></div>
+            <span class="volume-label"></span>
+        </div>
     </div>
     <div class="metadata">
-        <div class="song-title" amplitude-song-info="name">Tanssipelaajien Jouluradio 2016</div>
+        <div class="metadata-row">
+            <span class="metadata-info">Now playing ~ <i class="fa fa-music"></i> ~</span>
+            <span class="song-title" amplitude-song-info="name">Tanssipelaajien Jouluradio 2016</span>
+        </div>
         <!--
         <div class="song-details">
             <span class="song-artist" amplitude-song-info="artist">Artist</span> - <span class="song-album" amplitude-song-info="album">Album</span>

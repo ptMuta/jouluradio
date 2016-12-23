@@ -132,12 +132,27 @@ canvas {
     font-size: 24px;
 }
 
+.timer {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 64px;
+    margin-right: 10px;
+    line-height: 64px;
+
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #676261;
+}
+
 .volume-control {
     display: inline-block;
     vertical-align: top;
     width: 64px;
     height: 64px;
-    border: 1px solid #0a2e3d;
+    margin-right: 15px;
+    border: 1px solid #bababa;
 }
 
 .volume-control .volume-control-readout {
@@ -169,7 +184,7 @@ canvas {
 .volume-control .volume-control-buttons {
     float: left;
     clear: none;
-    border-left: 1px solid #0a2e3d;
+    border-right: 1px solid #bababa;
 }
 
 .volume-control .volume-control-buttons button {
@@ -178,44 +193,34 @@ canvas {
     height: 32px;
     padding: 0;
     cursor: pointer;
-    background-color: #0b5e78;
+    background-color: #f2f2f2;
     border: none;
-    color: #fff;
 }
 
 .volume-control .volume-control-buttons button:hover {
-    background-color: #0B4C63;
+    background-color: #bababa;
 }
 
 .volume-control .volume-control-buttons button:first-child {
-    height: 33px;
-    border-bottom: 1px solid #0a2e3d;
-}
-
-.timer {
-    display: inline-block;
-    vertical-align: top;
-    height: 64px;
-    margin-right: 15px;
-    line-height: 64px;
-
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: #676261;
+    height: 32px;
 }
 
 .metadata {
     display: inline-block;
     vertical-align: top;
     height: 64px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.metadata .metadata-info {
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .metadata .song-title {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #676261;
+    color: #353535;
     line-height: 64px;
 }
 
