@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -17,9 +18,14 @@
         <div class="amplitude-play-pause amplitude-playing" amplitude-main-play-pause="true"></div>
     </div>
     <div class="volume-control">
-        <span class="current-volume"><span class="volume-value">50</span> %</span>
-        <button class="amplitude-volume-up">up</button>
-        <button class="amplitude-volume-down">down</button>
+        <div class="volume-control-readout">
+            <div class="volume-value"></div>
+            <span class="volume-label"></span>
+        </div>
+        <div class="volume-control-buttons">
+            <button class="amplitude-volume-up"><i class="fa fa-volume-up"></i></button>
+            <button class="amplitude-volume-down"><i class="fa fa-volume-down"></i></button>
+        </div>
     </div>
     <div class="timer">
         <span class="amplitude-current-minutes" amplitude-single-current-minutes="true">2</span>:<span class="amplitude-current-seconds" amplitude-single-current-seconds="true">28</span>

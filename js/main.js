@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var currentVolume = 50;
     var metadataSource = 'http://jouluradio.pingtimeout.net/tunkki.php';
     var volumeEl = document.getElementsByClassName('volume-value')[0];
+    var volumeLabelEl = document.getElementsByClassName('volume-label')[0];
     var songTitleEl = document.getElementsByClassName('song-title')[0];
     var songArtistEl = document.getElementsByClassName('song-artist')[0];
     var songAlbumEl = document.getElementsByClassName('song-album')[0];
@@ -21,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updateVolume() {
-        volumeEl.innerHTML = currentVolume;
+        volumeLabelEl.innerHTML = currentVolume;
+        volumeEl.style.height = currentVolume + '%';
     }
 
     document.getElementsByClassName('amplitude-volume-up')[0].addEventListener('click', function () {
@@ -42,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateVolume();
     });
 
+    updateVolume();
     updateMetadata();
     setInterval(updateMetadata, 5000);
 
