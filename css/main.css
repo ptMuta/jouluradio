@@ -144,78 +144,28 @@ input[type=range].slider:focus::-ms-fill-upper {
     background: #dddddd;
 }
 
-/*
-	Small Player
-*/
-div#small-player{
-    width: 370px;
-    height: 60px;
+.container {
+    width: 851px;
+    margin: 0 auto;
+
     background-color: #f2f2f2;
-    border-radius: 5px;
-    margin: auto;
-    margin-top: 100px;
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-/*
-   Small Player Left
-*/
-div#small-player-left{
-    height: 45px;
-    width: 10px;
-    float: left;
+.playback-control {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 64px;
+    height: 64px;
 }
 
-/*
-    Small Player Album Art
-*/
-img#small-player-album-art{
-    width: 80px;
-    height: 60px;
-    float: left;
-}
 
-/*
-    Small Player Middle
-*/
-div#small-player-middle{
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    width: 260px;
-    height: 30px;
-    float: left;
-    cursor: pointer;
-}
-div#small-player-middle-top{
-    width: 260px;
-    float: left;
-    height: 30px;
-}
-div#small-player-middle-bottom{
-    width: 260px;
-    float: left;
-}
-
-/*
-    Small Player Middle Meta
-*/
-div#small-player-middle-controls{
-    display: none;
-}
-/*
-    Small Player Right
-*/
-div#small-player-right{
-    width: 25px;
-    float: left;
-    padding-top: 27px;
-}
-
-/*
-    Play Pause
-*/
-div.amplitude-play-pause{
+.playback-control .amplitude-play-pause{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -225,52 +175,56 @@ div.amplitude-play-pause{
     transform: translate(-50%, -50%);
     cursor: pointer;
 }
-div.amplitude-paused{
+
+.playback-control .amplitude-paused{
     background-image: url('../images/black-play.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
-div.amplitude-playing{
+
+.playback-control .amplitude-playing{
     background-image: url('../images/black-pause.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-/*
-    Song Time Visualization
-*/
-div#song-time-visualization{
-    width: 260px;
-    height: 5px;
-    background-color: #bebebe;
-}
-div#song-time-visualization div.amplitude-song-time-visualization-status{
-    background-color: #676261;
-    height: 5px;
+.volume-control {
+    display: inline-block;
+    vertical-align: top;
+    width: 64px;
+    height: 64px;
 }
 
-/*
-    Now Playing Information
-*/
-div#now-playing-title{
+.timer {
+    display: inline-block;
+    vertical-align: top;
+    height: 64px;
+    margin-right: 15px;
+    line-height: 64px;
+
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
     color: #676261;
-    line-height: 14px;
 }
-div.album-information{
+
+.metadata {
+    display: inline-block;
+    vertical-align: top;
+    height: 64px;
+}
+
+.metadata .song-title {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 16px;
+    color: #676261;
+    line-height: 64px;
+}
+
+.metadata .song-details {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     color: #bebebe;
-}
-/*
-    Current song time
-*/
-span#current-time{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
-    font-size: 10px;
-    color: #676261;
 }

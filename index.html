@@ -9,62 +9,6 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <style>
-        .container {
-            width: 851px;
-            margin: 0 auto;
-
-            background-color: #f2f2f2;
-            border-left: 1px solid #f2f2f2;
-            border-right: 1px solid #f2f2f2;
-            border-bottom: 1px solid #f2f2f2;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-
-        .playback-control {
-            position: relative;
-            display: inline-block;
-            vertical-align: top;
-            width: 64px;
-            height: 64px;
-        }
-
-        .timer {
-            display: inline-block;
-            vertical-align: top;
-            height: 64px;
-            margin-right: 15px;
-            line-height: 64px;
-        }
-
-        .metadata {
-            display: inline-block;
-            vertical-align: top;
-            height: 64px;
-        }
-
-        .metadata .song-title {
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            font-weight: 300;
-            font-size: 16px;
-            color: #676261;
-            line-height: 35px;
-        }
-
-        .metadata .song-details {
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            color: #bebebe;
-        }
-
-        .volume-control {
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 15px;
-        }
-    </style>
 </head>
 <body>
 <div class="container">
@@ -72,45 +16,22 @@
     <div class="playback-control">
         <div class="amplitude-play-pause amplitude-playing" amplitude-main-play-pause="true"></div>
     </div>
+    <div class="volume-control">
+        <span class="current-volume"><span class="volume-value">50</span> %</span>
+        <button class="amplitude-volume-up">up</button>
+        <button class="amplitude-volume-down">down</button>
+    </div>
     <div class="timer">
         <span class="amplitude-current-minutes" amplitude-single-current-minutes="true">2</span>:<span class="amplitude-current-seconds" amplitude-single-current-seconds="true">28</span>
     </div>
     <div class="metadata">
         <div class="song-title" amplitude-song-info="name">Tanssipelaajien Jouluradio 2016</div>
+        <!--
         <div class="song-details">
-            <span amplitude-song-info="artist">Artist</span> - <span amplitude-song-info="album">Album</span>
+            <span class="song-artist" amplitude-song-info="artist">Artist</span> - <span class="song-album" amplitude-song-info="album">Album</span>
         </div>
-    </div>
-    <div class="volume-control">
-        <input type="range" class="amplitude-volume-slider slider" orient="vertical" value="0">
+        -->
     </div>
 </div>
-
-<script type="text/javascript">
-    Amplitude.init({
-        "songs": [
-            {
-                "name": "Tanssipelaajien Jouluradio 2016",
-                "artist": "Artist",
-                "album": "Album",
-                "url":"http://taika.org:8000/jouluradio",
-                "live": true,
-                "cover_art_url": "http://jouluradio.pingtimeout.net/banner.png"
-            }
-        ],
-        "default_album_art": "http://jouluradio.pingtimeout.net/banner.png"
-    });
-
-    /*
-     jQuery Visual Helpers
-     */
-    $('#small-player').hover(function(){
-        $('#small-player-middle-controls').show();
-        $('#small-player-middle-meta').hide();
-    }, function(){
-        $('#small-player-middle-controls').hide();
-        $('#small-player-middle-meta').show();
-    });
-</script>
 </body>
 </html>
