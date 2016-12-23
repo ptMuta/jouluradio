@@ -54,6 +54,28 @@ body{
     background-color: #0B4C63;
 }
 
+canvas {
+    position:absolute;
+    top:0;
+    left:0;
+
+    z-index: -1;
+
+    background-image: linear-gradient(bottom, rgb(10, 46, 61) 0%, rgb(11, 76, 99) 84%);
+    background-image: -o-linear-gradient(bottom, rgb(10, 46, 61) 0%, rgb(11, 76, 99) 84%);
+    background-image: -moz-linear-gradient(bottom, rgb(10, 46, 61) 0%, rgb(11, 76, 99) 84%);
+    background-image: -webkit-linear-gradient(bottom, rgb(10, 46, 61) 0%, rgb(11, 76, 99) 84%);
+    background-image: -ms-linear-gradient(bottom, rgb(10, 46, 61) 0%, rgb(11, 76, 99) 84%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(11, 76, 99)),
+            color-stop(0.84, rgb(10, 46, 61))
+    );
+}
+
 .container {
     width: 851px;
     margin: 0 auto;

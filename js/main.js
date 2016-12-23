@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 cover_art_url: "http://jouluradio.pingtimeout.net/banner.png"
             }
         ],
+        autoplay: true,
         default_album_art: "http://jouluradio.pingtimeout.net/banner.png",
         volume: currentVolume / 100,
         volume_increment: 10,
