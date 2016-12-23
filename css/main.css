@@ -51,6 +51,7 @@ table {
 	Body
 */
 body{
+    overflow-x: hidden;
     background-color: #0B4C63;
 }
 
@@ -214,4 +215,8 @@ canvas {
     font-weight: 300;
     font-size: 14px;
     color: #bebebe;
+}
+
+.irc {
+    height: 550px;
 }
