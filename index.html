@@ -6,6 +6,7 @@
     <script type="text/javascript" src="js/amplitude.min.js"></script>
     <!-- jQuery only used to help with animations and NON Amplitude elements -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <style>
@@ -29,10 +30,33 @@
             height: 64px;
         }
 
+        .timer {
+            display: inline-block;
+            vertical-align: top;
+            height: 64px;
+            margin-right: 15px;
+            line-height: 64px;
+        }
+
         .metadata {
             display: inline-block;
             vertical-align: top;
             height: 64px;
+        }
+
+        .metadata .song-title {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            color: #676261;
+            line-height: 35px;
+        }
+
+        .metadata .song-details {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            color: #bebebe;
         }
 
         .volume-control {
@@ -48,12 +72,14 @@
     <div class="playback-control">
         <div class="amplitude-play-pause amplitude-playing" amplitude-main-play-pause="true"></div>
     </div>
+    <div class="timer">
+        <span class="amplitude-current-minutes" amplitude-single-current-minutes="true">2</span>:<span class="amplitude-current-seconds" amplitude-single-current-seconds="true">28</span>
+    </div>
     <div class="metadata">
-        <div id="now-playing-title" amplitude-song-info="name">Tanssipelaajien Jouluradio 2016</div>
-        <div class="album-information"><span amplitude-song-info="artist">Artist</span> - <span amplitude-song-info="album">Album</span></div>
-        <span id="current-time">
-						<span class="amplitude-current-minutes" amplitude-single-current-minutes="true">2</span>:<span class="amplitude-current-seconds" amplitude-single-current-seconds="true">28</span>
-					</span>
+        <div class="song-title" amplitude-song-info="name">Tanssipelaajien Jouluradio 2016</div>
+        <div class="song-details">
+            <span amplitude-song-info="artist">Artist</span> - <span amplitude-song-info="album">Album</span>
+        </div>
     </div>
     <div class="volume-control">
         <input type="range" class="amplitude-volume-slider slider" orient="vertical" value="0">
