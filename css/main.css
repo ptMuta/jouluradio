@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+	Body
+*/
+body{
+    background-color: #0B4C63;
+}
+
+/*
+    Slider
+*/
+
+input[type=range].slider {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 0.7px 0;
+}
+input[type=range].slider:focus {
+    outline: none;
+}
+input[type=range].slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 25.6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 1px rgba(13, 13, 13, 0.2);
+    background: #f2f2f2;
+    border-radius: 0px;
+    border: 0px solid #010101;
+}
+input[type=range].slider::-webkit-slider-thumb {
+    box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+    border: 0px solid #ff1e00;
+    height: 27px;
+    width: 18px;
+    border-radius: 0px;
+    background: #0b4c63;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.7px;
+}
+input[type=range].slider:focus::-webkit-slider-runnable-track {
+    background: #f2f2f2;
+}
+input[type=range].slider::-moz-range-track {
+    width: 100%;
+    height: 25.6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 1px rgba(13, 13, 13, 0.2);
+    background: #f2f2f2;
+    border-radius: 0px;
+    border: 0px solid #010101;
+}
+input[type=range].slider::-moz-range-thumb {
+    box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+    border: 0px solid #ff1e00;
+    height: 27px;
+    width: 18px;
+    border-radius: 0px;
+    background: #0b4c63;
+    cursor: pointer;
+}
+input[type=range].slider::-ms-track {
+    width: 100%;
+    height: 25.6px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range].slider::-ms-fill-lower {
+    background: #f2f2f2;
+    border: 0px solid #010101;
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 1px rgba(13, 13, 13, 0.2);
+}
+input[type=range].slider::-ms-fill-upper {
+    background: #f2f2f2;
+    border: 0px solid #010101;
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 1px rgba(13, 13, 13, 0.2);
+}
+input[type=range].slider::-ms-thumb {
+    box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+    border: 0px solid #ff1e00;
+    height: 27px;
+    width: 18px;
+    border-radius: 0px;
+    background: #0b4c63;
+    cursor: pointer;
+    height: 25.6px;
+}
+input[type=range].slider:focus::-ms-fill-lower {
+    background: #f2f2f2;
+}
+input[type=range].slider:focus::-ms-fill-upper {
+    background: #f2f2f2;
+}
+
+/*
+	Small Player
+*/
+div#small-player{
+    width: 370px;
+    height: 60px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/*
+   Small Player Left
+*/
+div#small-player-left{
+    height: 45px;
+    width: 10px;
+    float: left;
+}
+
+/*
+    Small Player Album Art
+*/
+img#small-player-album-art{
+    width: 80px;
+    height: 60px;
+    float: left;
+}
+
+/*
+    Small Player Middle
+*/
+div#small-player-middle{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 260px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+}
+div#small-player-middle-top{
+    width: 260px;
+    float: left;
+    height: 30px;
+}
+div#small-player-middle-bottom{
+    width: 260px;
+    float: left;
+}
+
+/*
+    Small Player Middle Meta
+*/
+div#small-player-middle-controls{
+    display: none;
+}
+/*
+    Small Player Right
+*/
+div#small-player-right{
+    width: 25px;
+    float: left;
+    padding-top: 27px;
+}
+
+/*
+    Play Pause
+*/
+div.amplitude-play-pause{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 23px;
+    width: 20px;
+    margin: 0 -50% 0 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+div.amplitude-paused{
+    background-image: url('../images/black-play.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+div.amplitude-playing{
+    background-image: url('../images/black-pause.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*
+    Song Time Visualization
+*/
+div#song-time-visualization{
+    width: 260px;
+    height: 5px;
+    background-color: #bebebe;
+}
+div#song-time-visualization div.amplitude-song-time-visualization-status{
+    background-color: #676261;
+    height: 5px;
+}
+
+/*
+    Now Playing Information
+*/
+div#now-playing-title{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #676261;
+    line-height: 14px;
+}
+div.album-information{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #bebebe;
+}
+/*
+    Current song time
+*/
+span#current-time{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: #676261;
+}
