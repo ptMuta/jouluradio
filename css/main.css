@@ -23,25 +23,31 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -50,15 +56,15 @@ table {
 /*
 	Body
 */
-body{
+body {
     overflow-x: hidden;
     background-color: #0B4C63;
 }
 
 canvas {
-    position:absolute;
-    top:0;
-    left:0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     z-index: -1;
 
@@ -99,8 +105,7 @@ canvas {
     height: 64px;
 }
 
-
-.playback-control .amplitude-play-pause{
+.playback-control .amplitude-play-pause {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -111,16 +116,20 @@ canvas {
     cursor: pointer;
 }
 
-.playback-control .amplitude-paused{
-    background-image: url('../images/black-play.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+.playback-control .amplitude-paused:before {
+    position: absolute;
+    top: 0;
+    content: "\F04B";
+    font-family: FontAwesome;
+    font-size: 24px;
 }
 
-.playback-control .amplitude-playing{
-    background-image: url('../images/black-pause.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+.playback-control .amplitude-playing:before {
+    position: absolute;
+    top: 0;
+    content: "\F04D";
+    font-family: FontAwesome;
+    font-size: 24px;
 }
 
 .volume-control {
@@ -132,8 +141,8 @@ canvas {
 }
 
 .volume-control .volume-control-readout {
-    float:left;
-    clear:none;
+    float: left;
+    clear: none;
     position: relative;
     width: 24px;
     height: 64px;
@@ -158,8 +167,8 @@ canvas {
 }
 
 .volume-control .volume-control-buttons {
-    float:left;
-    clear:none;
+    float: left;
+    clear: none;
     border-left: 1px solid #0a2e3d;
 }
 
